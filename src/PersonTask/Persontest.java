@@ -8,9 +8,9 @@ public class Persontest {
 
         dv.getName();
         System.out.println(dv);
-
+        System.out.println("0000000000000");
         dv.work();
-
+dv.fixingBugs();
 
     }
 }
