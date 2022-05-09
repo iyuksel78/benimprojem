@@ -1,6 +1,6 @@
 package animalTask;
 
-public class Dog extends Animal {
+public final class Dog extends Animal implements Playable{
     public String tasma;
     public void bark() {
         System.out.println(name + " : is barking");
@@ -22,4 +22,16 @@ public class Dog extends Animal {
                 ", tasma='" + tasma + '\'' +
                 '}';
     }
+
+    @Override
+    public void eat() {
+        System.out.println(name+ " is eating pizza");;
+    }
+
+    @Override
+    public void play() {
+        System.out.println(name+ " is playing with ball");
+    }
+
+
 }

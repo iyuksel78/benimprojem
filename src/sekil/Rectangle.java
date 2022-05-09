@@ -1,6 +1,8 @@
-package ShapeTask;
+package sekil;
 
-public class Rectangle extends Shape{
+
+
+public class Rectangle extends Shape {
     private double width;
     private double length;
 
@@ -25,7 +27,7 @@ public class Rectangle extends Shape{
             System.err.println("invalid length: " + length);
             System.exit(1);
         }
-            this.length = length;
+        this.length = length;
     }
 
     public Rectangle(double width, double length) {

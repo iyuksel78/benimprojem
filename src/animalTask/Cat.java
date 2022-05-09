@@ -1,6 +1,6 @@
 package animalTask;
 
-public class Cat extends Animal {
+public class Cat extends Animal implements Playable{
 
 
     public Cat(String name, String breed, String color, String size, int age, char gender) {
@@ -13,4 +13,20 @@ public class Cat extends Animal {
     public void scratch() {
         System.out.println(name + " : is scratching");
     }
+
+    @Override
+    public void eat() {
+        System.out.println(name+ " is eating biryani");
+    }
+
+    @Override
+    public void play() {
+        System.out.println(name + " is playing with yumak");
+    }
+
+    @Override
+    public void play3() {
+        System.out.println("merhaba");
+    }
+
 }

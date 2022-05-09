@@ -1,4 +1,6 @@
-package ShapeTask;
+package sekil;
+
+
 
 public class Triangle extends Shape {
 
@@ -48,7 +50,7 @@ public class Triangle extends Shape {
     }
 
     public double area() {
-    return ((base * base) + (sideB * sideB) + (sideC * sideC));
+        return ((base * base) + (sideB * sideB) + (sideC * sideC));
     }
 
     public double perimeter() {
@@ -58,6 +60,7 @@ public class Triangle extends Shape {
 
     public String toString() {
         return "Triangle{" +
+                super.toString()+
                 "heigth=" + heigth +
                 ", base=" + base +
                 ", sideB=" + sideB +

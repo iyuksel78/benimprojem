@@ -1,6 +1,8 @@
-package ShapeTask;
+package sekil;
 
-public class Square extends Shape{
+
+
+public class Square extends Shape {
     private double side;
 
     public Square(double side) {
@@ -14,11 +16,11 @@ public class Square extends Shape{
 
     public void setSide(double side) {
         if (side<=0){
-            System.err.println("invalid side: " + side);
-            System.exit(1);
+            throw new RuntimeException("invalid side");
         }
         this.side = side;
     }
+
 
     public double area() {
         return side*side;
@@ -30,9 +32,8 @@ public class Square extends Shape{
 
     public String toString() {
         return "Square{" +
+                super.toString()+
                 ", Side: "+side+
-                ", Area: "+area()+
-                ", Perimeter: "+perimeter()+
-        '}';
+                '}';
     }
 }
